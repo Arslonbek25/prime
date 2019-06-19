@@ -1,0 +1,2 @@
+# prime
+Discover prime numbers!
