@@ -1,0 +1,143 @@
+/* RESET */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .3);
+    border-radius: 6px;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Lato regular";
+    line-height: 1.4;
+    font-size: 16px;
+    background: #343A40;
+}
+
+/* DESIGN */
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.heading {
+    color: #fff;
+    font: 25px "Lato bold";
+    margin: 7px 0 20px 0;
+    text-align: center;
+}
+
+#box {
+    width: 100%;
+}
+
+.number {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+    user-select: none;
+    color: #fff;
+    margin: 5px 3px 5px 0;
+}
+
+.prime {
+    font-family: "Lato bold";
+    background: #FF3230;
+    border-radius: 50%;
+}
+
+#length,
+#length::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#length {
+    display: block;
+    width: 100%;
+    height: 20px;
+    outline: none;
+    background: linear-gradient(90deg, #f5efc880, #ec0071);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#length::before {
+    content: attr(data-length);
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    color: #fff;
+    background: #ec0071;
+    padding: 5px 10px;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+#length::-webkit-slider-thumb {
+    width: 20px;
+    height: 20px;
+    background: #E99BB1;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #212529;
+    color: #868e96;
+    width: 100%;
+    height: 135px;
+    font-size: 13px;
+    font-family: "Lato light";
+    text-align: center;
+}
+
+#footer svg {
+    width: 16px;
+    height: 11.5px;
+}
+
+#footer p:first-child {
+    margin-bottom: 7px;
+}
+
+#footer a {
+    font-family: "Lato bold";
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
