@@ -22,7 +22,7 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: "Lato regular";
+    font-family: 'Lato', sans-serif;
     line-height: 1.4;
     font-size: 16px;
     background: #343A40;
@@ -39,7 +39,7 @@ body {
 
 .heading {
     color: #fff;
-    font: 25px "Lato bold";
+    font-size: 25px;
     margin: 7px 0 20px 0;
     text-align: center;
 }
@@ -61,7 +61,6 @@ body {
 }
 
 .prime {
-    font-family: "Lato bold";
     background: #FF3230;
     border-radius: 50%;
 }
@@ -119,7 +118,6 @@ body {
     width: 100%;
     height: 135px;
     font-size: 13px;
-    font-family: "Lato light";
     text-align: center;
 }
 
@@ -133,7 +131,6 @@ body {
 }
 
 #footer a {
-    font-family: "Lato bold";
     text-decoration: none;
     color: #fff;
 }
