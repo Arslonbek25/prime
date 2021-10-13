@@ -14,9 +14,9 @@ function generate(len) {
 document.getElementById("numCheck").oninput = function () {
     var i = parseInt(this.value);
     if ((i % 2 != 0 || i == 2) && (i % 3 != 0 || i == 3) && (i % 5 != 0 || i == 5) && (i % 7 != 0 || i == 7)) {
-        this.style.borderLine = "green";
+        this.style.borderColor = "green";
     } else {
-        this.style.borderLine = "red";
+        this.style.borderColor = "red";
     }
 };
 
