@@ -12,7 +12,7 @@ function generate(len) {
 }
 
 document.getElementById("numCheck").oninput = function () {
-    for (var i = 0; i <= this.value; i++) {
+    for (var i = 0; i <= this.value.length; i++) {
         if ((i % 2 != 0 || i == 2) && (i % 3 != 0 || i == 3) && (i % 5 != 0 || i == 5) && (i % 7 != 0 || i == 7)) {
             this.style.borderLine = "green";
         } else {
