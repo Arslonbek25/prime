@@ -138,3 +138,8 @@ body {
 #footer a:hover {
     text-decoration: underline;
 }
+
+#numCheck {
+ text-align: center;
+ margin: 0 0 20px 0;
+}
